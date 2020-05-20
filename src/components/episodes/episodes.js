@@ -44,6 +44,7 @@ function Episodes() {
           return
         }
         else{
+          setError('');
           setUrl(`https://rickandmortyapi.com/api/episode/?name=${searchText}`);
           setNext(null);
           setPrev(null);
